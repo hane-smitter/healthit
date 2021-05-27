@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use App\role;
-use App\Proficiency;
+use App\Models\User;
+use App\Models\role;
+use App\Models\Proficiency;
 use Closure;
 use Auth;
 use DateTime;

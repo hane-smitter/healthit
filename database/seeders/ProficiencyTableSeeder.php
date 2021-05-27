@@ -1,12 +1,14 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Routing\Controller;
-use App\User;
-use App\role;
-use App\Proficiency;
-use App\Appointment;
+use App\Models\User;
+use App\Models\role;
+use App\Models\Proficiency;
+use App\Models\Appointment;
 
 class ProficiencyTableSeeder extends Seeder
 {
@@ -18,7 +20,6 @@ class ProficiencyTableSeeder extends Seeder
     public function run()
     {
 
-         $faker = Faker\Factory::create();
          $strings = array(
              'Infectology',
             'Cardiology',

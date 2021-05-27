@@ -13,7 +13,7 @@ class User extends Authenticatable
     //use FilterPaginateOrder;
 
     public function role(){
-        return $this->belongsToMany(role::class, 'role_users', 'user_id', 'role_id');
+        return $this->belongsToMany(Role::class, 'role_users', 'user_id', 'role_id');
     }
 
     public function appointment(){

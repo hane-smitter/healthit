@@ -30,8 +30,8 @@ Route::get('/', function () {
 Auth::routes();
 
 /* Incial page helpdesk and doctor*/
-Route::get('/medic/home', 'HomeController@index')->name('home');
-Route::get('/help/home', 'HelpController@index')->name('help');
+Route::get('/medic/home', 'MedicController@index')->name('medic.home');
+Route::get('/help/home', 'HelpController@index')->name('help.home');
 Route::get('/help/users/edit', 'HelpController@edit');
 
 /** Register a new doctor */
@@ -91,4 +91,4 @@ Route::get('/findUsersDate', 'HelpController@findUsersDate');
 /*Route::get('/findEspecialidadeDate', 'HelpController@findEspecialidadeDate');*/
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

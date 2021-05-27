@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Proficiency;
-use App\User;
-use App\role;
+use App\Models\Proficiency;
+use App\Models\User;
+use App\Models\role;
 use Illuminate\Http\Request;
 
 class ProficiencyController extends Controller

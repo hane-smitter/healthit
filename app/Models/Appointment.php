@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Support\FilterPaginateOrder;
 use Illuminate\Database\Eloquent\Model;
-use App\User;
+// use App\User;
 use DB;
 use App\Quotation;
 

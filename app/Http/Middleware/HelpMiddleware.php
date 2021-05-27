@@ -16,7 +16,7 @@ class HelpMiddleware
      */
     public function handle($request, Closure $next)
     {
-        foreach (Auth::user()->role as $role )
+        foreach (auth()->user()->role as $role )
         {
             if ($role->name == 'Helpdesk'){
             return $next($request);

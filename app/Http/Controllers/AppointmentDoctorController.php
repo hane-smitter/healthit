@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Appointment;
-use App\User;
-use Auth;
-use App\role;
-use Carbon\Carbon;
-use App\Proficiency;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
+use App\Models\Appointment;
+use App\Models\User;
+use App\Models\role;
+use App\Models\Proficiency;
+
+
 
 class AppointmentDoctorController extends Controller
 {
